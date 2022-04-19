@@ -1,0 +1,878 @@
+	 /*Visualização Desktop*/
+	 	 
+	  .scrollTop{
+	  		outline: none;
+	  		border: 0;
+	  		background: #ffffff;
+	  		width: 63px;
+	  		height: 63px;
+	  		padding: 8px;
+	  		border-radius:50%;
+	  		display: flex;
+	  		align-items: center;
+	  		justify-content: center;
+	  		position: fixed;
+	  		right: 20px;
+	  		bottom: 20px;
+	  		box-shadow:0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0,0,0,.6) ;
+	  		z-index: 999;
+	  		cursor: pointer;
+	  		opacity: 0;
+	  		visibility: hidden;
+	  		transition: all .5s ease;
+	  }
+	  
+	  .scrollTop.active{
+	  				opacity: 1;
+	  				visibility: visible;
+	  }
+	  
+	  .scrollTop  img{
+	  				width: 60%;
+	  				transform: rotate(180deg);
+	  }
+	  
+	 	 *{scroll-behavior: smooth;}
+
+  body{background:
+    linear-gradient(
+     rgba(14,97,49,.31),
+      rgba(19,202,101,.46)
+    );}
+
+  body,h1{margin: 0;}
+  
+  span{opacity: 0;}
+  
+  .div1{
+    height:100vh;
+    display: grid;
+    gap:30px;
+    grid-template-columns:1fr 1fr;
+    background:
+    linear-gradient(
+     rgba(14,97,49,.31),
+      rgba(19,202,101,.46)
+    );}
+    
+    img{     
+      grid-row: 1 / 5;
+      grid-column: 2;
+           align-self: center;
+            width:95%;
+    }
+    
+   
+    
+  .div1 h1, p, a{
+          color:rgb(2,37,11);
+  }
+    
+  .div1 h1{
+        margin-top: 100px;
+        font-family: 'Lora', serif;
+          font-size: 56px;
+          padding:10px;
+          text-align: center;
+  }
+  
+  
+  .animate__zoomIn{
+          animation-delay: .5s;
+  }
+  
+  .div1 p{
+        font-family: 'Mukta', sans-serif;
+          font-size: 40px;
+          padding: 10px;
+          text-align: center;
+  }
+  
+   .seta img{
+          animation: seta 1.3s ease-in-out infinite;
+          width: 60px;
+          align-self: center;
+  }
+  
+  @keyframes seta{
+         0%{margin-top: 0px;}
+         50%{margin-top: 15px;}
+         100%{margin-top: 0px;}
+  }
+  
+  .conteudoM1 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 25px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM1 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 35px;
+  				text-align:center;
+  }
+ 
+  .conteudoM1{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/b6w9LJH/Maravilha1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top ;
+  background-attachment:fixed;
+ }
+ 
+   .conteudoM1-item{
+        align-self:start;
+ 		width: 400px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+  				margin-bottom: 25px;
+  				border:1px solid black;
+          margin-left: 50px;
+  }
+  
+   .conteudoM2 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 25px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM2 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 35px;
+  				text-align:center;
+  }
+  .conteudoM2{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/MZcs0t8/Maravilha2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center center;
+ }
+ 
+   .conteudoM2-item{
+        align-self:end;
+ 		width: 400px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+          margin-right: 50px;
+  				}
+  
+   .conteudoM3 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 25px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM3 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 35px;
+  				text-align:center;
+  }
+  .conteudoM3{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/F6HbyvZ/Maravilha3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: top;
+ }
+ 
+   .conteudoM3-item{
+        align-self:start;
+ 		width: 400px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+          margin-left: 50px;
+  }
+  
+   .conteudoM4 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 25px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM4 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 35px;
+  				text-align:center;
+  }
+  .conteudoM4{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/HBZx4yc/Maravilha4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: top;
+ }
+ 
+   .conteudoM4-item{
+        align-self:end;
+ 		width: 400px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+          margin-right: 50px;
+  }
+  
+  
+   .conteudoM5 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 25px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM5 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 35px;
+  				text-align:center;
+  }
+  .conteudoM5{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/72t5hfJ/Maravilha5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:top;
+ }
+ 
+   .conteudoM5-item{
+        align-self:start;
+ 		width: 400px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+          margin-left: 50px;
+  }
+  
+  
+   .conteudoM6 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 25px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM6 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 35px;
+  				text-align:center;
+  }
+  .conteudoM6{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/TYMqQNx/Maravilha6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: top;
+ }
+ 
+   .conteudoM6-item{
+        align-self:end;
+ 		width: 400px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+          margin-right: 50px;
+  }
+  
+  
+   .conteudoM7 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 25px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM7 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 35px;
+  				text-align:center;
+  }
+  .conteudoM7{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/k14qDXH/Maravilha7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: top;
+ }
+ 
+   .conteudoM7-item{
+        align-self:start;
+ 		width: 400px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+          margin-left: 50px;
+  }
+  
+  
+  .introducao{height: 100vh;margin-top: 50px;  background: white;}
+.introducao h2{font-family: 'Lora', serif; text-align: center; color:rgb(2, 37, 11); margin-top:30px; font-size:37px; margin-bottom: 70px;}
+.introducao p{font-family: 'Mukta', sans-serif; text-align: left; padding:0px 80px 0px 80px; color:rgb(2, 37, 11); font-size: 27px;}
+  
+  .conteudoM1, .conteudoM2, .conteudoM3, .conteudoM4, .conteudoM5, .conteudoM6, .conteudoM7 h2, p{
+  				color:white;
+  }
+  
+  .conteudoM1-item, .conteudoM2-item, .conteudoM3-item, .conteudoM4-item, .conteudoM5-item, .conteudoM6-item, .conteudoM7-item{
+  background:rgba(0,0,0,.5);
+  border:1px solid white;
+  }  
+  
+  .div1-item p{
+  color:rgb(2,37,11);}
+  
+  footer p{color:rgb(2,37,11); font-weight: bold; font-family: 'Mukta', sans-serif; font-size: 26px; text-align: center; margin-bottom: 0px; margin-bottom:12px;}
+   
+  footer span{color:#0a2c3b;
+  opacity: 1; font-weight: bold; font-family: 'Mukta', sans-serif; font-size: 26px;}
+  
+  .iconesrodapé{
+  margin-top:0px;
+  display: flex;
+  gap:25px;
+  padding-bottom: 10px;
+  justify-content: center;
+  }
+  
+  .iconesrodapé img{
+  		width: 55px;
+  }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Visualização Mobile*/
+	
+	@media (max-width:800px){
+	
+	 .scrollTop{
+	  		outline: none;
+	  		border: 0;
+	  		background: #ffffff;
+	  		width: 50px;
+	  		height: 50px;
+	  		padding: 8px;
+	  		border-radius:50%;
+	  		display: flex;
+	  		align-items: center;
+	  		justify-content: center;
+	  		position: fixed;
+	  		right: 20px;
+	  		bottom: 20px;
+	  		box-shadow:0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0,0,0,.6) ;
+	  		z-index: 999;
+	  		cursor: pointer;
+	  		opacity: 0;
+	  		visibility: hidden;
+	  		transition: all .5s ease;
+	  }
+	
+ *{scroll-behavior: smooth;}
+
+  body{background:
+    linear-gradient(
+     rgba(14,97,49,.31),
+      rgba(19,202,101,.46)
+    );}
+
+  body,h1{margin: 0;}
+  
+  span{opacity:0;}
+  
+  .div1{
+    height:100vh;
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+    height:100vh;
+    background:
+    linear-gradient(
+     rgba(14,97,49,.31),
+      rgba(19,202,101,.46)
+    );}
+    
+    img{
+           align-self: center;
+            width:80%;
+    }
+    
+   
+    
+  .div1 h1, p, a{
+          color:rgb(2,37,11);
+  }
+    
+  .div1 h1{
+        margin-top: 50px;
+        font-family: 'Lora', serif;
+          font-size: 40px;
+          padding:10px;
+          text-align: center;
+  }
+  
+  
+  .animate__zoomIn{
+          animation-delay: .5s;
+  }
+  
+  .div1 p{
+        font-family: 'Mukta', sans-serif;
+          font-size: 25px;
+          padding: 10px;
+          text-align: center;
+  }
+  
+   .seta img{
+          animation: seta 1.3s ease-in-out infinite;
+          width: 40px;
+          align-self: center;
+  }
+  
+  @keyframes seta{
+         0%{margin-top: 0px;}
+         50%{margin-top: 15px;}
+         100%{margin-top: 0px;}
+  }
+  
+  .conteudoM1 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 19px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM1 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 26px;
+  				text-align:center;
+  }
+ 
+  .conteudoM1{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/dDnFSHD/Maravilha1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment:fixed;
+ }
+ 
+   .conteudoM1-item{
+        align-self:center;
+ 		width: 340px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        margin:0px;
+  				margin-bottom: 25px;
+  				border:1px solid black;
+  				
+  }
+  
+   .conteudoM2 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 19px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM2 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 26px;
+  				text-align:center;
+  }
+  .conteudoM2{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/QbMRYHc/Maravilha2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:center;
+ }
+ 
+   .conteudoM2-item{
+        align-self:center;
+ 		width: 340px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        margin:0px;
+  				margin-bottom: 25px;
+  				border: 1px solid black;  
+  				}
+  
+   .conteudoM3 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 19px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM3 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 26px;
+  				text-align:center;
+  }
+  .conteudoM3{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/X3N5CZm/Maravilha3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center center;
+ }
+ 
+   .conteudoM3-item{
+        align-self:center;
+ 		width: 340px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        margin:0px;
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+  }
+  
+   .conteudoM4 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 19px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM4 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 26px;
+  				text-align:center;
+  }
+  .conteudoM4{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/PMC1rsZ/Maravilha4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center center;
+ }
+ 
+   .conteudoM4-item{
+        align-self:center;
+ 		width: 340px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        margin:0px;
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+  }
+  
+  
+   .conteudoM5 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 19px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM5 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 26px;
+  				text-align:center;
+  }
+  .conteudoM5{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/Trg8z2b/Maravilha5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center center;
+ }
+ 
+   .conteudoM5-item{
+        align-self:center;
+ 		width: 340px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        margin:0px;
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+  }
+  
+  
+   .conteudoM6 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 19px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM6 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 26px;
+  				text-align:center;
+  }
+  .conteudoM6{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/K0ZGnKk/Maravilha6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center center;
+ }
+ 
+   .conteudoM6-item{
+        align-self:center;
+ 		width: 340px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        margin:0px;
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+  }
+  
+  
+   .conteudoM7 p{
+  /*text-shadow: #a3c4ac 1px 2px 1em ;*/
+  				font-family: 'Mukta', sans-serif;
+  				font-size: 19px;
+  				text-align: left;
+  				padding:0px 25px 0px 25px;
+  				
+  }
+  .conteudoM7 h2{
+  				font-family: 'Lora', serif;
+  				font-size: 26px;
+  				text-align:center;
+  }
+  .conteudoM7{
+  color:rgb(2,37,11);
+  justify-content:end;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  background: url('https://i.ibb.co/XCTpkHn/Maravilha7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: center center;
+ }
+ 
+   .conteudoM7-item{
+        align-self:center;
+ 		width: 340px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.4);
+overflow: hidden;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        margin:0px;
+  				margin-bottom: 25px;
+  				border: 1px solid black;
+  }
+  
+  
+  .introducao{height: 100vh; margin-top: 50px;  background: white;}
+.introducao h2{font-family: 'Lora', serif; text-align: center; color:rgb(2, 37, 11); margin-top:20px; font-size:30px;}
+.introducao p{font-family: 'Mukta', sans-serif; text-align: left; padding:0px 25px 0px 25px; color:rgb(2, 37, 11); font-size: 17px;}
+  
+  .conteudoM1, .conteudoM2, .conteudoM3, .conteudoM4, .conteudoM5, .conteudoM6, .conteudoM7 h2, p{
+  				color:white;
+  }
+  
+  .conteudoM1-item, .conteudoM2-item, .conteudoM3-item, .conteudoM4-item, .conteudoM5-item, .conteudoM6-item, .conteudoM7-item{
+  background:rgba(0,0,0,.5);
+  border:1px solid white;
+  }  
+  
+  .div1-item p{
+  color:rgb(2,37,11);}
+  
+  footer p{color:rgb(2,37,11); font-weight: bold; font-family: 'Mukta', sans-serif; font-size: 17px; text-align: center; margin-bottom: 0px; margin-bottom:6px;}
+   
+  footer span{color:#0a2c3b;
+  opacity: 1; font-weight: bold; font-family: 'Mukta', sans-serif; font-size: 17px;}
+  
+  .iconesrodapé{
+  margin-top:0px;
+  display: flex;
+  gap:15px;
+  padding-bottom: 10px;
+  justify-content: center;
+  }
+  
+  .iconesrodapé img{
+  		width: 40px;
+  }
+  
+   .introducao{height: 100vh;margin-top: 50px;  background: white;}
+.introducao h2{font-family: 'Lora', serif; text-align: center; color:rgb(2, 37, 11); margin-top:30px; font-size:27px; margin-bottom: 30px;}
+.introducao p{font-family: 'Mukta', sans-serif; text-align: left; padding:0px 16px 0px 16px; color:rgb(2, 37, 11); font-size: 16.5px;}
+  
+  }
+  
